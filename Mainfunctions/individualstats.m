@@ -1,15 +1,8 @@
 % This script performs individual fMRI analysis
 % It first loads configuration file containing individual stats parameters
-% A changeable configuration file can be found at
-% /home/fmri/fmrihome/SPM/spm8_scripts/IndividualStats/individualstats_conf
-% ig.m.template
-% 
-% This scripts are compatible with both Analyze and NIFTI formats
-% To use either format, change the data type in individualstats_config.m
-%
+
 % To run individual fMRI analysis, type at Matlab command line: 
 % >> individualstats('individualstats_config.m')
-% 
 % _________________________________________________________________----------
 
 
