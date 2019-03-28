@@ -1,1 +1,10 @@
 for RSA analysis including fidelity and distinctiveness
+
+Neural pattern distinctiveness. 
+  A representation distinctiveness metric was computed to characterize changes in inter-trial multivoxel activity pattern dissimilarity among retrieved events over the course of retrieval practice. The multivoxel activity pattern for each trial during retrieval practice was extracted from the mask in each run. We then computed their corresponding Pearson’s correlation coefficients with activity patterns of other remaining trials from the same condition of the same run. These coefficients were transformed into Fisher’s z-scores and averaged, then the average was subtracted from 1 to yield the distinctiveness metric for each run.
+  
+Neural representation stability.
+  The z-score map of retrieval-induced neural activation pattern was first obtained from the Neurosynth platform as a canonical reference by using a composite mask of all 15 ROIs defined above. The multivoxel activity patterns for RP (or NR) condition on each run were separately extracted from the same mask, and then computed their corresponding Pearson’s correlation coefficients with the canonical reference map respectively. Thereafter, correlation coefficients were Fisher’s z-transformed and submitted to compute neural representation stability.
+   
+Neural representation fidelity.
+  The other pattern stability index, reflecting neural representation fidelity over the course of retrieval practice, was used to quantify the correlation of multivoxel neural activity patterns between the initial (1st) and the remaining run(2nd-8th).
