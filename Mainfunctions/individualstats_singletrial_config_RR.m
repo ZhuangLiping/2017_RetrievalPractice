@@ -1,9 +1,5 @@
 % This is the configuration template file for individual analysis 
 % _________________________________________________________________________
-% 2009-2012 Stanford Cognitive and Systems Neuroscience Laboratory
-%
-% $Id: individualstats_config.m.template, Tianwen Chen, 2012-06-06 $
-% -------------------------------------------------------------------------
 
 % Please specify the data type of preprocessed images
 % 'nii' for Nifti 4-D format, 'img' for Analyze 7.5 format
