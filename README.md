@@ -19,23 +19,26 @@ o	Figures in the MS: Figure 1; Supplemental Figure 1
 B.  fMRI data quality check and univariate analysis
 
 Raw DICOMs:
+
 o	/brain/iCAN/home/zhuangliping/RR/raw_data
 
 Data quality check:
+
 o	Movement:/brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/RR_movement.xlsx
+
 o	Quality check report:/brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/Quality check report.txt
 
 Univariate analysis: 
+
 o	Task design
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/task_design/taskdesign*.m
 
 o	Preprocessing
-  /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri_config_RR.m
-  /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri.m
+  # /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri_config_RR.m
+  # /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri.m
 Usage: preprocessfmri(‘preprocessfmri_config_RR.m’)
 
-o	Individual stats: 
-  /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_config_RR.m
+o	Individual stats: /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_config_RR.m
   /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_RR.m
 Usage: individualstats_RR (‘individualstats_config_RR.m’)
 
@@ -46,33 +49,42 @@ Usage: individualstats_singletrial (‘individualstats_singletrial_config_RR.m�
 
 o	Texts in the MS: 6th & 7th section in the Methods & Materials
 
-
 C.	Representational similarity analysis
 
 Template and ROIs: 
+
 o	Link to the directory: /brain/iCAN/home/zhuangliping/RR/ROIs
 
 Representational distinctiveness:
+
 o	Link to the directory: 
 /brain/iCAN/home/zhuangliping/RR/RSA/ Results_RSA/RSA_ distinctiveness
+
 o	Core scripts & subject list:
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/RSA_singletrial.m
+
 o	Texts in the MS: 9th section in the Methods & Materials
+
 o	Figures in the MS: Figure 2 & S3
 
 Representational fidelity:
+
 o	Link to the directory: /brain/iCAN/home/zhuangliping/RR/RSA/Results_RSA/RSA_R1template
+
 o	Core scripts & subject list:
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/RSAfidelity.m
+
 o	Texts in the MS: 1st section in the Supplementary methods
+
 o	Figures in the MS: Figure S2, S4 & S5
 
 
 D.	Network and prediction analysis
 
 Network construction:
-o	Link to the directory: 
-/brain/iCAN/home/zhuangliping/RR/PPI_NET
+
+o	Link to the directory:/brain/iCAN/home/zhuangliping/RR/PPI_NET
+
 o	Core scripts & subject list:
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/gPPI_mask_RR.m
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/gPPI_mask_RR_config.m
