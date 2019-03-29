@@ -1,0 +1,14 @@
+Network construction. 
+  Network nodes consisted of 15 ROIs as defined above. 
+  For each participant, a 15 x 15 connectivity matrix was created for each task condition (i.e., RP or NR) in each run by using a generalized form of context-dependent psychophysiological interaction (gPPI) analysis. 
+  The gPPI approach was widely used to assess task-dependent functional connectivity of a specific seed or ROI with the rest of the brain, after removing potential confounds of overall task activation and common driving inputs. 
+  Specifically, mean time series from each seed ROI were extracted and then deconvolved so as to uncover neuronal activity (i.e., physiological variable) and multiplied with the task design vector contrasting the RP condition versus the fixation condition (i.e., a binary psychological variable) to form a psychophysiological interaction (PPI) vector. 
+  This interaction vector was convolved with a canonical HRF in SPM8 to form the PPI regressor of interest. 
+  The psychological variable representing task design (RP versus fixation) as well as mean-corrected time series of each seed ROI were also included in the GLM to remove overall task-related activation and the effects of common driving inputs on brain connectivity. 
+  To ensure normality, connectivity values of each task condition were Fisher’s z-transformed. 
+  Note that only the voxels within 15 ROIs were included in this analysis to save computational resources. 
+  Separate gPPI analyses were conducted for each seed ROI to assess its task-dependent functional connectivity with the remaining ROIs.
+
+Network analysis.
+  Network matrices derived from the gPPI analyses were entered into GRETNA for network analysis (https://www.nitrc.org/projects/gretna/).
+  GRETNA is a graph theoretical network analysis toolbox which allows researchers to perform comprehensive analysis on the topology of brain connectome by integrating the most of network measures studied in current neuroscience field.
