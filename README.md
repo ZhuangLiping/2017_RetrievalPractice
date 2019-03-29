@@ -4,8 +4,7 @@ Codes for Retrieval Practice Project
 
 Master Sheet for Data Analysis Conducted in The Manuscript
 
-A.	Behavioral data
-Behavioral data (outside scanner)
+A.	Behavioral data (outside scanner)
 o	Raw data: /brain/iCAN/home/zhuangliping/RR/behav/
 o	Analyzed data: /brain/iCAN/home/zhuangliping/RR/RR_Manuscript/RR_behav.xlsx
 o	Texts in the MS: 
