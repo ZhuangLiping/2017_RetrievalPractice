@@ -22,14 +22,18 @@ Raw DICOMs:
 o	/brain/iCAN/home/zhuangliping/RR/raw_data
 
 Data quality check:
+
 o	Movement:     
 /brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/RR_movement.xlsx
+
 o	Quality check report:
 /brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/Quality check report.txt
 
 Univariate analysis: 
+
 o	Task design
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/task_design/taskdesign*.m
+
 o	Preprocessing 
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri_config_RR.m
 /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri.m
