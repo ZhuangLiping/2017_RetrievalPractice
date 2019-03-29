@@ -1,3 +1,6 @@
+Usage:  gPPI_mask_RR(‘gPPI_mask_RR_config.m’) % conduct gPPI analyses
+        getNETmatrix.m  % extract value from gPPI results to construct 15 x 15 connectivity matrix
+
 Network construction. 
   Network nodes consisted of 15 ROIs as defined above. 
   For each participant, a 15 x 15 connectivity matrix was created for each task condition (i.e., RP or NR) in each run by using a generalized form of context-dependent psychophysiological interaction (gPPI) analysis. 
