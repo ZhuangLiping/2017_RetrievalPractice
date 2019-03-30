@@ -1,1 +1,4 @@
 These scripts perform Preprocessing and individual fMRI analysis
+Usage: preprocessfmri(‘preprocessfmri_config_RR.m’)
+       Usage: individualstats_RR (‘individualstats_config_RR.m’)
+       Usage: individualstats_singletrial (‘individualstats_singletrial_config_RR.m’)
