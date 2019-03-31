@@ -1,4 +1,4 @@
-To define a memory-related brain mask, we used the Neurosynth platform for large-scale, automated synthesis of fMRI data (http://neurosynth.org) with ‘memory retrieval’ as a search term and generated a reverse inference mask at the whole-brain level. 
-We then refined the mask using a criterion of a height threshold of p < 0.001 (or z-score > 3.0) and a spatial extent cluster size of more than 30 voxels. Then, the whole-brain mask was segmented into 15 different ROIs or clusters based on spatially contiguous voxels. These ROIs included the left ventral lateral prefrontal cortex (l_VLPFC), right ventral lateral prefrontal cortex (r_VLPFC), left dorsal lateral prefrontal cortex (l_DLPFC), orbito-inferior frontal gyrus (orbIFG), dorsal anterior cingulate cortex (dACC ), ventral medial prefrontal cortex (vmPFC), right superior frontal cortex (r_SFG), right hippocampus (r_HPC), left hippocampus (l_HPC), left medial temporal gyrus (l_MTG ), anterior medial temporal lobe (aMTL), right lateral parietal cortex (r_LPC), left lateral parietal cortex (l_LPC), precuneus (PrC) and posterior cingulate cortex (PCC).
+ROIs related to memory retrieval
 
 memory_retrieval_pFgA_z_FDR_0.01.nii :image file from NeuroSynth with ‘memory retrieval’ as a search term;
+wholemask_memory_retrieval.nii: the whole mask related to memory retrieval
