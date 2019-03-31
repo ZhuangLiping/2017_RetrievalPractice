@@ -2,13 +2,15 @@
 This repository contains core scripts for Retrieval Practice Project.
 
 # Summary and requirements:
-	This repository contains MATLAB scripts needed to produce key results and supplementary materials.They have been tested using MATLAB 2016a.
+	This repository contains MATLAB scripts needed to produce key results and supplementary materials.
+	They have been tested using MATLAB 2016a.
 	This code requires data available in ExampleData folder.
 	To run the scripts, add folders mentioned in Dependencies to Matlab.
 
 # Test environment(s):
 	MATLAB Version: 9.0.0.341360 (R2016a)
-	Operating System: Microsoft Windows 10 Home Version 10.0 & Linux ln01 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux	
+	Operating System: Microsoft Windows 10 Home Version 10.0 
+	& Linux ln01 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux	
 
 # Preliminary Tasks:
 	Preprocess:/RetrievalPractice/Mainfunctions/preprocessfmri.m
