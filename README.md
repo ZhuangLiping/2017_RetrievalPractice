@@ -1,121 +1,49 @@
 # RetrievalPractice
-Codes for Retrieval Practice Project
+This repository contains core scripts for Retrieval Practice Project.
+
+# Summary and requirements:
+	This repository contains MATLAB scripts needed to produce key results and supplementary materials.They have been tested using MATLAB 2016a.
+	This code requires data available in ExampleData folder.
+	To run the scripts, add folders mentioned in Dependencies to Matlab.
+
+# Test environment(s):
+	MATLAB Version: 9.0.0.341360 (R2016a)
+	Operating System: Microsoft Windows 10 Home Version 10.0 & Linux ln01 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux	
+
+# Preliminary Tasks:
+	Preprocess:/RetrievalPractice/Mainfunctions/preprocessfmri.m
+	Regular individual analysis: /RetrievalPractice/Mainfunctions/individualstats_RR.m
+	Single trial individual analysis: /RetrievalPractice/Mainfunctions/individualstats_singletrial.m
+
+# Behavioral analysis (Figure 1, Supplementary Figure 1):
+	Behavioral data:  /RetrievalPractice/RR_database.mat (as table format)
+
+# Template and ROIs:
+	Link to the directory: /RetrievalPractice/ROIs/
+
+# Representational similarity analysis (Figure 2, Figure 5 and Supplementary Figure 2-5):
+	Representational distinctiveness: /RetrievalPractice/RSA/RSA_singletrial.m
+	Representational fidelity: /RetrievalPractice/RSA/RSAfidelity.m
+	RSA with NeuroSynth pattern: /RetrievalPractice/RSA/RSAwithNeuorosythn.m
+
+# Network analysis(Figure 3 & 4, Supplementary Figure 6):
+	Conduct gPPI analyses: /RetrievalPractice/Network/gPPI_mask_RR.m
+	Extract value from gPPI results to construct 15 x 15 connectivity matrix: /RetrievalPractice/Network/getNETmatrix.m
+	Configure of network analysis:/RetrievalPractice/Network/NetworkMetricsConfigure.txt
+
+# Network-based brain-behavior prediction analysis (Figure 4 & 5, Supplementary Figure 7):
+	Based on LIBSVM toolbox (http://www.csie.ntu.edu.tw/~cjlin/libsvm/)
+	Prediction analysis: /RetrievalPractice/Prediction/predict_net_accumulated_asym.m
+	Permutation analysis to test the statistical significance of prediction accuracy: /RetrievalPractice/Prediction/predict_net_accumulated_asym_permutation.m
 
 
-Master Sheet for Data Analysis Conducted in The Manuscript
+# Dependencies: These should be installed to run scripts
+	Matlab: www.mathworks.com
+	Statistical Parametric Mapping (SPM): software https://www.fil.ion.ucl.ac.uk/spm/
+	Generalized PPI Toolbox: https://www.nitrc.org/projects/gppi
+	GRETNA Toolbox: https://www.nitrc.org/projects/gretna/
+	LIBSVM toolbox: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
 
-A.	Behavioral data (outside scanner)
-
-o	Raw data: /brain/iCAN/home/zhuangliping/RR/behav/
-
-o	Analyzed data: /brain/iCAN/home/zhuangliping/RR/RR_Manuscript/RR_behav.xlsx
-
-o	Texts in the MS: 
-  	  1st section in the main text and Behavioral data analysis in the Methods & Materials used the information from analyzed data folder;
-  	  Participants/Materials/Experimental procedure in the Methods & Materials used the information from raw data folder
-
-o	Figures in the MS: Figure 1; Supplemental Figure 1 
-
-B.  fMRI data quality check and univariate analysis
-
-Raw DICOMs:
-
-o	/brain/iCAN/home/zhuangliping/RR/raw_data
-
-Data quality check:
-
-o	Movement:/brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/RR_movement.xlsx
-
-o	Quality check report:/brain/iCAN/home/zhuangliping/RR/behav/SUBinfo/Quality check report.txt
-
-Univariate analysis: 
-
-o	Task design
-/brain/iCAN/home/zhuangliping/RR/RR_scripts/task_design/taskdesign*.m
-
-o	Preprocessing
-   1. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri_config_RR.m
-   2. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/preprocessfmri.m
-Usage: preprocessfmri(‘preprocessfmri_config_RR.m’)
-
-o	Individual stats: 
-   1. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_config_RR.m
-   2. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_RR.m
-   3. Usage: individualstats_RR (‘individualstats_config_RR.m’)
-
-o	Individual stats (for single trial):  
-  1. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_singletrial_config_RR.m
-  2. /brain/iCAN/home/zhuangliping/RR/RR_scripts/Mainfunctions/individualstats_singletrial.m
-  3. Usage: individualstats_singletrial (‘individualstats_singletrial_config_RR.m’)
-
-o	Texts in the MS: 6th & 7th section in the Methods & Materials
-
-C.	Representational similarity analysis
-
-Template and ROIs: 
-
-o	Link to the directory: /brain/iCAN/home/zhuangliping/RR/ROIs
-
-Representational distinctiveness:
-
-o	Link to the directory: /brain/iCAN/home/zhuangliping/RR/RSA/ Results_RSA/RSA_ distinctiveness
-
-o	Core scripts & subject list:
-/brain/iCAN/home/zhuangliping/RR/RR_scripts/RSA_singletrial.m
-
-o	Texts in the MS: 9th section in the Methods & Materials
-
-o	Figures in the MS: Figure 2 & S3
-
-Representational fidelity:
-
-o	Link to the directory: /brain/iCAN/home/zhuangliping/RR/RSA/Results_RSA/RSA_R1template
-
-o	Core scripts & subject list: /brain/iCAN/home/zhuangliping/RR/RR_scripts/RSAfidelity.m
-
-o	Texts in the MS: 1st section in the Supplementary methods
-
-o	Figures in the MS: Figure S2, S4 & S5
-
-
-D.	Network and prediction analysis
-
-Network construction:
-
-o	Link to the directory:/brain/iCAN/home/zhuangliping/RR/PPI_NET
-
-o	Core scripts & subject list: 
-  1. /brain/iCAN/home/zhuangliping/RR/RR_scripts/gPPI_mask_RR.m 
-  2. /brain/iCAN/home/zhuangliping/RR/RR_scripts/gPPI_mask_RR_config.m 
-  3. Usage: gPPI_mask_RR(‘gPPI_mask_RR_config.m’)
-  4. /brain/iCAN/home/zhuangliping/RR/RR_scripts/getNETmatrix.m
-
-o	Texts in the MS: 10th section in the Methods & Materials
-
-o	Figures in the MS: Figure 3A
-
-Network analysis:
-
-o	Link to the directory: C:\Users\upon\Documents\Research\TASKs\RR\results\Network\network\data\results\
-
-o	Configure (GRETNA software): C:\Users\upon\Documents\Research\TASKs\DEP_MS\results\Network\network\data\results\GretnaLogs\NetworkMetricsConfigure.txt
-
-o	Texts in the MS: 12th & 13th section in the Methods & Materials
-
-o	Figures in the MS: Figure 3B, 3C,4C & S6
-
-Network-based brain-behavior prediction analysis:
-
-o	Link to the directory: 
-
-o	/brain/iCAN/home/zhuangliping/RR/Prediction
-
-o	Core scripts:
-  1. /brain/iCAN/home/zhuangliping/RR/RR_scripts/predict_net_accumulated_asym.m
-  2. /brain/iCAN/home/zhuangliping/RR/RR_scripts/predict_net_accumulated_asym_permutation.m
-
-o	Texts in the MS: 11th section in the Methods & Materials
-
-o	Figures in the MS: Figure 4B, 5B& S7
+	
 
 
