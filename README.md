@@ -30,13 +30,14 @@ This repository contains core scripts for Retrieval Practice Project.
 
 # Network analysis(Figure 3 & 4, Supplementary Figure 6):
 	Conduct gPPI analyses: /RetrievalPractice/Network/gPPI_mask_RR.m
-	Extract value from gPPI results to construct 15 x 15 connectivity matrix: /RetrievalPractice/Network/getNETmatrix.m
+	Extract value from gPPI results to construct connectivity matrix: /RetrievalPractice/Network/getNETmatrix.m
 	Configure of network analysis:/RetrievalPractice/Network/NetworkMetricsConfigure.txt
 
 # Network-based brain-behavior prediction analysis (Figure 4 & 5, Supplementary Figure 7):
 	Based on LIBSVM toolbox (http://www.csie.ntu.edu.tw/~cjlin/libsvm/)
 	Prediction analysis: /RetrievalPractice/Prediction/predict_net_accumulated_asym.m
-	Permutation analysis to test the statistical significance of prediction accuracy: /RetrievalPractice/Prediction/predict_net_accumulated_asym_permutation.m
+	Permutation analysis to test the statistical significance of prediction accuracy:
+	/RetrievalPractice/Prediction/predict_net_accumulated_asym_permutation.m
 
 
 # Dependencies: These should be installed to run scripts
