@@ -1,1 +1,4 @@
-
+RR_NETdata.mat: Connectivity matrix extracted from gPPI results
+selectedFeatures_thr001.mat: The selected links from the optimal prediction accuracy
+predict_net_accumulated_asym.m: The script performs prediction, based on LIBSVM toolbox
+predict_net_accumulated_asym_permutation.m: Permutation analysis to test the statistical significance of prediction accuracy
